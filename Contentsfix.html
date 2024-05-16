@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contentsfix</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        header{
+            width: 100%;
+            height: 90px;
+            background-color: #ef0107;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header > img{
+            width: 50px;
+            margin: 0px 24px 0px 0px;
+        }        
+        header >  a{
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: bold;
+            -webkit-text-stroke: 1px #dbb900;
+            text-decoration: none;
+            margin-left: 24px;
+        }
+        header > a:nth-child(2) > img{
+            width: 50px;
+            margin: 0px 24px 0px 0px;
+        }        
+        header > a:nth-child(2){
+            display: flex;
+            justify-content: center;
+        }
+        main{width: 100%;
+            min-height: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #container{
+            width: 1470px;
+            height: 785px;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            float: left;
+            
+        }
+        #container > #ChoiceBBS{
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            width: 240px;
+            height: 240px;
+            align-items: center;
+        }
+        #container > #ChoiceBBS > div{
+            width: 240px;
+            height: 56px;
+            font-size: 28px;
+            font-weight: bold;
+            -webkit-text-stroke: 1px #dbb900;
+            color: #ffffff;
+            background-color: #ef0107;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 7px;
+        }
+        #container > #ChoiceBBS > a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 7px;
+        }
+        #ChoiceBBS > a:hover{
+            text-decoration: underline !important;
+        }
+        #container > #contentsbox{
+            width: 1200px;
+            height: 640px;
+            border: 1px solid #000000;
+            display: flex;
+            flex-direction: column;
+        }
+        #container > #contentsbox > div:nth-child(1){
+            width: 1200px;
+            height: 56px;
+            background-color: #ef0107;
+            color: #ffffff;
+            -webkit-text-stroke: 1px #dbb900;
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #contentsbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #contentsbox > div:nth-child(2){
+            display: flex;
+            width: 1000px;
+            height: 40px;
+            margin-top: 56px;
+        }
+        #contentsbox > div:nth-child(2) > input{
+            width: 680px;
+            height: 32px;
+            font-size: 20px;
+            margin-right: 32px;
+        }
+        #BBSChoice{
+            width: 280px;
+            height: 38px;
+            font-size: 20px;      
+        }
+        #textoption{
+            display: flex;
+        }
+        #textoption > p{
+            font-weight: bold;
+            margin-right: 16px;
+        }
+        #contentsbox > div:nth-child(3){
+            width: 1000px;
+            height: 340px;
+            margin-top: 24px;
+        }
+        #contentsbox > div:nth-child(3) > textarea{
+            width: 1000px;
+            height: 320px;
+            resize: none;      
+        }
+        #AddFile{
+            width: 1000px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+        }
+        #AddFile > button{
+            width: 144px;
+            height: 32px;
+            color: #ffffff;
+            background-color: #c9c9c9;
+            border: 1px solid black;
+            margin-right: 16px;
+        }
+        #AddFile > input{
+            width: 840px;
+            height: 28px;
+        }
+        #send{
+            display: flex;
+            margin-top: 16px;
+        }
+        #send > a > button{
+            margin-right: 32px;
+            width: 80px;
+            height: 36px;
+            font-size: 16px;
+            background-color: #c9c9c9;
+            color: #ffffff;
+            
+        }
+        footer{
+            width: 100%;
+            height: 90px;
+            background-color: #ef0107;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <a href="./Mainpage.html">Digital Emirates Stadium</a>
+        <a href="./loginpage.html"><img src="./Sign_out_circle.png" alt="Login"></a>
+    </header>
+    <main>
+        <div id="container">
+            <div id="ChoiceBBS">
+                <div>게시판선택</div>
+                <a href="./BBSpage.html">자유게시판</a>
+                <a href="./BBSpage(tactic).html">전술게시판</a>
+                <a href="./BBSpage(player).html">선수게시판</a>
+                <a href="./BBSpage(game).html">게임게시판</a>
+                <a href="./BBSpage(news).html">뉴스게시판</a>
+            </div>
+            <div id="contentsbox">
+                <div>
+                    게시글 수정
+                </div>
+                <div>
+                    <input type="text" placeholder="제목">
+                    <form action="">
+                        <select name="BBSChoice" id="BBSChoice">
+                            <option value="FreeBBS">자유게시판</option>
+                            <option value="TacticBBS">전술게시판</option>
+                            <option value="PlayerBBS">선수게시판</option>
+                            <option value="GameBBS">게임게시판</option>
+                            <option value="NewsBBS">뉴스게시판</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <div id="textoption">
+                        <p>font</p>
+                        <p>size</p>
+                        <p>weight</p>
+                        <p>color</p>
+                    </div>
+                    <textarea name="contents" id="contentswritebox" placeholder="글을 입력하세요."></textarea>
+                </div>
+                <div id="AddFile">
+                    <button>첨부파일</button>
+                    <input type="text">
+                </div>
+                <div id="send">
+                    <a href="./Contents.html"><button>수정</button></a>
+                    <a href="./BBSpage.html"><button>취소</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESLogin</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        header{
+            width: 100%;
+            height: 90px;
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            float: left;
+            justify-content: space-between;
+        }
+        
+        header > div{
+            margin: 0px 0px 0px 24px ;
+        }
+        header > div > a{
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: bold;
+            -webkit-text-stroke: 1px #dbb900;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        
+        main{width: 100%;
+            min-height: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./Loginpage.jpg!d);
+        }
+        #container{
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #container > #login{
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 58px;
+        }
+        #container > div{
+            margin: 0px 0px 14px 0px;
+        }
+        #container > div > p{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            -webkit-text-stroke: 1px #dbb900;
+
+
+        }
+        #container > div > input{
+            width: 320px;
+            height: 50px;
+            border-radius: 8px;
+            border-color: #c6c6c6;
+            border-width: 1px;
+            border-style: solid;
+        }
+        #loginbutton{
+            width: 325px;
+            height: 80px;
+            background-color: #000000;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            -webkit-text-stroke: 1px #dbb900;
+
+        }
+        #loginlink{
+            text-decoration: none;            
+        }
+        #newlogin{
+            width: 325px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #newlogin > a{
+            text-decoration: none;
+            font-size: 14px;
+            -webkit-text-stroke: 0.7px #dbb900;
+
+        }
+        footer{
+            width: 100%;
+            height: 90px;
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><a href="./Mainpage.html">Digital Emirates Stadium</a></div>
+    </header>
+    <main>
+        <div id="container">
+            <div id="login">로그인</div>
+            <div>
+                <p>아이디</p>
+                <input type="textbox">
+            </div>
+            <div>
+                <p>비밀번호</p>
+                <input type="password">
+            </div>
+            <div id="newlogin">
+                <a href="./membership.html">회원가입</a>
+                <a href="./IDFind.html">아이디 찾기</a>
+                <a href="./PWFind.html">비밀번호 찾기</a>
+            </div>
+            <a href="BBSpage.html" id="loginlink"><div id="loginbutton">
+                <p>로그인</p>
+            </div></a>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
